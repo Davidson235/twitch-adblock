@@ -1,0 +1,34 @@
+[
+  {
+    "pt": "site",
+    "status": 404,
+    "bytes": 34,
+    "variants": 0,
+    "firstUrl": null,
+    "note": "[{\"error\":\"Can not find channel\"}]"
+  },
+  {
+    "pt": "embed",
+    "status": 404,
+    "bytes": 34,
+    "variants": 0,
+    "firstUrl": null,
+    "note": "[{\"error\":\"Can not find channel\"}]"
+  },
+  {
+    "pt": "popout",
+    "status": 404,
+    "bytes": 34,
+    "variants": 0,
+    "firstUrl": null,
+    "note": "[{\"error\":\"Can not find channel\"}]"
+  },
+  {
+    "pt": "autoplay",
+    "status": 404,
+    "bytes": 34,
+    "variants": 0,
+    "firstUrl": null,
+    "note": "[{\"error\":\"Can not find channel\"}]"
+  }
+]

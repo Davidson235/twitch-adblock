@@ -1,0 +1,74 @@
+{
+  "extName": {
+    "message": "Twitch adblock",
+    "description": "Название расширения"
+  },
+  "extDescription": {
+    "message": "Блокирует серверную рекламу (SSAI) в Twitch: подменяет мастер-плейлист на чистый поток и вырезает ad-сегменты.",
+    "description": "Описание расширения (максимум 132 символа)"
+  },
+  "actionTitle": {
+    "message": "Twitch adblock",
+    "description": "Подсказка на кнопке тулбара"
+  },
+  "caption": {
+    "message": "рекламных вставок заблокировано",
+    "description": "Подпись под большим счётчиком"
+  },
+  "statusLive": {
+    "message": "LIVE",
+    "description": "Статус, когда блокировка включена"
+  },
+  "statusOff": {
+    "message": "ВЫКЛЮЧЕНО",
+    "description": "Статус, когда блокировка выключена"
+  },
+  "btnEnable": {
+    "message": "Включить",
+    "description": "Надпись на кнопке, когда блокировка выключена"
+  },
+  "btnDisable": {
+    "message": "Выключить",
+    "description": "Надпись на кнопке, когда блокировка включена"
+  },
+  "ariaEnable": {
+    "message": "Включить блокировку",
+    "description": "Подсказка, когда блокировка выключена"
+  },
+  "ariaDisable": {
+    "message": "Выключить блокировку",
+    "description": "Подсказка, когда блокировка включена"
+  },
+  "sessionCount": {
+    "message": "на вкладке: $COUNT$",
+    "description": "Сколько заблокировано в текущей вкладке",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "downloadLog": {
+    "message": "скачать лог",
+    "description": "Ссылка в футере, выгружает диагностику"
+  },
+  "diagChecks": {
+    "message": "проверок: $CHECKS$ · ad-сегментов: $SEGS$",
+    "description": "Подсказка в футере с диагностикой",
+    "placeholders": {
+      "checks": {
+        "content": "$1",
+        "example": "2"
+      },
+      "segs": {
+        "content": "$2",
+        "example": "6"
+      }
+    }
+  },
+  "dvrTail": {
+    "message": " · DVR-хвост",
+    "description": "Суффикс, если сработал DVR-fallback"
+  }
+}

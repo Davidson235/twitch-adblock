@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Twitch adblock</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="px-word" viewBox="0 0 35 7">
+        <g transform="translate(0 0)"><path d="M1 0h3v1h-3zM0 1h1v1h-1zM4 1h1v1h-1zM0 2h1v1h-1zM0 3h1v1h-1zM2 3h3v1h-3zM0 4h1v1h-1zM4 4h1v1h-1zM0 5h1v1h-1zM4 5h1v1h-1zM1 6h3v1h-3z"/></g>
+        <g transform="translate(6 0)"><path d="M1 0h2v1h-2zM2 1h1v1h-1zM2 2h1v1h-1zM2 3h1v1h-1zM2 4h1v1h-1zM2 5h1v1h-1zM1 6h3v1h-3z"/></g>
+        <g transform="translate(12 0)"><path d="M2 0h1v1h-1zM1 2h2v1h-2zM2 3h1v1h-1zM2 4h1v1h-1zM2 5h1v1h-1zM1 6h3v1h-3z"/></g>
+        <g transform="translate(18 0)"><path d="M2 0h1v1h-1zM2 1h1v1h-1zM1 2h3v1h-3zM2 3h1v1h-1zM2 4h1v1h-1zM2 5h1v1h-1zM3 6h2v1h-2z"/></g>
+        <g transform="translate(24 0)"><path d="M1 0h3v1h-3zM0 1h1v1h-1zM4 1h1v1h-1zM0 2h1v1h-1zM0 3h1v1h-1zM0 4h1v1h-1zM0 5h1v1h-1zM4 5h1v1h-1zM1 6h3v1h-3z"/></g>
+        <g transform="translate(30 0)"><path d="M0 0h1v1h-1zM0 1h1v1h-1zM0 2h1v1h-1zM2 2h2v1h-2zM0 3h2v1h-2zM4 3h1v1h-1zM0 4h1v1h-1zM4 4h1v1h-1zM0 5h1v1h-1zM4 5h1v1h-1zM0 6h1v1h-1zM4 6h1v1h-1z"/></g>
+      </symbol>
+      <symbol id="px-crown" viewBox="0 0 9 7">
+        <path d="M0 0h1v1h-1zM8 0h1v1h-1zM0 1h2v1h-2zM7 1h2v1h-2zM0 2h1v1h-1zM2 2h1v1h-1zM6 2h1v1h-1zM8 2h1v1h-1zM0 3h1v1h-1zM3 3h1v1h-1zM5 3h1v1h-1zM8 3h1v1h-1zM0 4h1v1h-1zM4 4h1v1h-1zM8 4h1v1h-1zM0 5h9v1h-9zM0 6h9v1h-9z"/>
+      </symbol>
+      <symbol id="px-smile" viewBox="0 0 9 9">
+        <path d="M2 0h5v1h-5zM1 1h1v1h-1zM7 1h1v1h-1zM0 2h1v1h-1zM2 2h1v1h-1zM6 2h1v1h-1zM8 2h1v1h-1zM0 3h1v1h-1zM8 3h1v1h-1zM0 4h1v1h-1zM8 4h1v1h-1zM0 5h1v1h-1zM2 5h1v1h-1zM6 5h1v1h-1zM8 5h1v1h-1zM0 6h1v1h-1zM3 6h3v1h-3zM8 6h1v1h-1zM1 7h1v1h-1zM7 7h1v1h-1zM2 8h5v1h-5z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="card">
+    <span class="px tl" aria-hidden="true"></span>
+    <span class="px tr" aria-hidden="true"></span>
+    <span class="px bl" aria-hidden="true"></span>
+    <span class="px br" aria-hidden="true"></span>
+
+    <div class="brand">
+      <div class="logo-wrap">
+        <svg class="crown" aria-hidden="true"><use href="#px-crown"/></svg>
+        <img class="logo" src="icons/icon48.png" alt="">
+      </div>
+      <svg class="glitch top" aria-hidden="true"><use href="#px-word"/></svg>
+    </div>
+
+    <h1 class="title">Twitch adblock</h1>
+
+    <div class="hero">
+      <svg class="smile s1" aria-hidden="true"><use href="#px-smile"/></svg>
+      <svg class="smile s2" aria-hidden="true"><use href="#px-smile"/></svg>
+      <div class="num" id="total">0</div>
+    </div>
+    <div class="cap" data-i18n="caption">ad breaks blocked</div>
+
+    <div class="status">
+      <span class="pulse" id="pulse"></span>
+      <span class="state" id="statusText">LIVE</span>
+      <span class="spacer"></span>
+      <span class="muted" id="session">this tab: 0</span>
+    </div>
+
+    <button class="btn" id="toggleBtn" aria-pressed="true" title="Turn off blocking">
+      <span id="btnLabel">Turn off</span>
+      <svg class="power" viewBox="0 0 16 16" aria-hidden="true">
+        <path d="M8 2.2v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <path d="M4.79 4.67a5 5 0 1 0 6.42 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </button>
+
+    <div class="foot" id="foot">
+      <button class="link" id="dump" data-i18n="downloadLog">download log</button>
+      <span class="sep">·</span>
+      <span id="ver">v5</span>
+    </div>
+
+    <svg class="glitch bottom" aria-hidden="true"><use href="#px-word"/></svg>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

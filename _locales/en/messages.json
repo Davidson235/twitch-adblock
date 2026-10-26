@@ -1,0 +1,74 @@
+{
+  "extName": {
+    "message": "Twitch adblock",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Blocks server-side (SSAI) ads in Twitch streams by rewriting the HLS playlist on the fly.",
+    "description": "Extension description (max 132 characters)"
+  },
+  "actionTitle": {
+    "message": "Twitch adblock",
+    "description": "Toolbar button tooltip"
+  },
+  "caption": {
+    "message": "ad breaks blocked",
+    "description": "Caption under the big counter"
+  },
+  "statusLive": {
+    "message": "LIVE",
+    "description": "Status when blocking is on"
+  },
+  "statusOff": {
+    "message": "OFF",
+    "description": "Status when blocking is off"
+  },
+  "btnEnable": {
+    "message": "Turn on",
+    "description": "Button label when blocking is off"
+  },
+  "btnDisable": {
+    "message": "Turn off",
+    "description": "Button label when blocking is on"
+  },
+  "ariaEnable": {
+    "message": "Turn on blocking",
+    "description": "Accessible name / tooltip when blocking is off"
+  },
+  "ariaDisable": {
+    "message": "Turn off blocking",
+    "description": "Accessible name / tooltip when blocking is on"
+  },
+  "sessionCount": {
+    "message": "this tab: $COUNT$",
+    "description": "Ads blocked in the current tab",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "downloadLog": {
+    "message": "download log",
+    "description": "Footer link that exports diagnostics"
+  },
+  "diagChecks": {
+    "message": "checks: $CHECKS$ · ad segments: $SEGS$",
+    "description": "Footer tooltip with diagnostics",
+    "placeholders": {
+      "checks": {
+        "content": "$1",
+        "example": "2"
+      },
+      "segs": {
+        "content": "$2",
+        "example": "6"
+      }
+    }
+  },
+  "dvrTail": {
+    "message": " · DVR tail",
+    "description": "Suffix when the DVR fallback was used"
+  }
+}
