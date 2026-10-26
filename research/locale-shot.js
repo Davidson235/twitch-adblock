@@ -4,7 +4,7 @@ const path = require('path');
 const PW = 'playwright';
 const { chromium } = require(PW);
 
-const EXT = path.join(__dirname, '..');
+const EXT = process.env.EXT || path.join(__dirname, '..');
 const OUT = path.join(EXT, 'docs');
 const LANGS = (process.env.LANGS || 'en-US,ru-RU').split(',').map((s) => s.trim()).filter(Boolean);
 
