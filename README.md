@@ -1,6 +1,10 @@
 # Twitch adblock
 
+> **[English](README.md)** | **[Русская версия](README.ru.md)**
+
 A Chrome / Edge extension (Manifest V3) that removes **server-side stitched ads (SSAI)** from Twitch streams.
+
+*Расширение для Chrome и Edge (Manifest V3), убирающее серверную рекламу (SSAI) из стримов Twitch без отдельного плеера и потери качества. Полное русскоязычное описание доступно в [README.ru.md](README.ru.md).*
 
 <p align="center">
   <img src="docs/popup-en.png" width="320" alt="Twitch adblock popup">

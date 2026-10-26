@@ -1,5 +1,7 @@
 # Twitch adblock
 
+> **[Русский](README.ru.md)** | **[English version](README.md)**
+
 Расширение для Chrome / Edge (Manifest V3), которое убирает **серверную рекламу (SSAI)** из трансляций Twitch.
 
 <p align="center">
