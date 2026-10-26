@@ -6,6 +6,10 @@
 
 <p align="center">
   <img src="docs/popup-ru.png" width="320" alt="Popup на русском">
+  <br><br>
+  <a href="#поддержка-проекта-и-донаты"><img src="https://img.shields.io/badge/Донат-Криптовалюта-f39c12?style=for-the-badge&logo=bitcoin&logoColor=white" alt="Донат"></a>
+  <a href="#поддержка-проекта-и-донаты"><img src="https://img.shields.io/badge/ETH%20%2F%20EVM-0xa9fB...-3C3C3D?style=for-the-badge&logo=ethereum&logoColor=white" alt="ETH"></a>
+  <a href="#поддержка-проекта-и-донаты"><img src="https://img.shields.io/badge/SOL-B3c4...-9945FF?style=for-the-badge&logo=solana&logoColor=white" alt="SOL"></a>
 </p>
 
 Twitch вставляет рекламу прямо в HLS-плейлист на том же CDN, что и сам стрим, поэтому обычная блокировка доменов бесполезна. Расширение переписывает плейлист до того, как его увидит плеер — без отдельного плеера, без потери качества и без перекодирования видео.
@@ -113,6 +117,15 @@ powershell -File scripts/build.ps1
 ```
 
 Пуш тега `v*` запускает `.github/workflows/release.yml`: собирает zip и прикрепляет его к GitHub-релизу.
+
+## Поддержка проекта и донаты
+
+Если расширение помогло вам смотреть Twitch без рекламы и вы хотите поддержать автора и развитие проекта, крипто-донаты с благодарностью принимаются:
+
+| Сеть / Экосистема | Адрес кошелька | Поддерживаемые сети и токены |
+| :--- | :--- | :--- |
+| **EVM (MetaMask)** | `0xa9fB203Ce2AA939642a3D53A1dBcb182F21Dd697` | **Ethereum** (ETH, ERC-20), **BNB Smart Chain** (BNB, BEP-20), **Polygon** (POL), **Arbitrum One**, **Optimism** (OP), **Base**, **Avalanche C-Chain** (AVAX) |
+| **Solana** | `B3c4xrSL4iVAi6t6GadUPJ56iy5586JDansdvur5KpKk` | **Solana** (SOL) и любые SPL-токены (USDC, USDT и др.) |
 
 ## Приватность
 

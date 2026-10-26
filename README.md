@@ -8,6 +8,10 @@ A Chrome / Edge extension (Manifest V3) that removes **server-side stitched ads 
 
 <p align="center">
   <img src="docs/popup-en.png" width="320" alt="Twitch adblock popup">
+  <br><br>
+  <a href="#support--donations"><img src="https://img.shields.io/badge/Donate-Crypto-f39c12?style=for-the-badge&logo=bitcoin&logoColor=white" alt="Donate"></a>
+  <a href="#support--donations"><img src="https://img.shields.io/badge/ETH%20%2F%20EVM-0xa9fB...-3C3C3D?style=for-the-badge&logo=ethereum&logoColor=white" alt="ETH"></a>
+  <a href="#support--donations"><img src="https://img.shields.io/badge/SOL-B3c4...-9945FF?style=for-the-badge&logo=solana&logoColor=white" alt="SOL"></a>
 </p>
 
 Twitch stitches ads right into the HLS playlist served from the same CDN as the stream, so classic domain blocking does nothing. This extension rewrites the playlist before the player ever sees it — no separate player, no quality loss, no video re-encoding.
@@ -115,6 +119,15 @@ powershell -File scripts/build.ps1
 ```
 
 Pushing a `v*` tag triggers `.github/workflows/release.yml`, which builds the zip and attaches it to the GitHub release.
+
+## Support & Donations
+
+If this extension has helped you enjoy ad-free Twitch streams and you'd like to support the ongoing development and maintenance, crypto donations are gratefully accepted:
+
+| Network / Ecosystem | Wallet Address | Supported Blockchains & Assets |
+| :--- | :--- | :--- |
+| **EVM (MetaMask)** | `0xa9fB203Ce2AA939642a3D53A1dBcb182F21Dd697` | **Ethereum** (ETH, ERC-20), **BNB Smart Chain** (BNB, BEP-20), **Polygon** (POL), **Arbitrum One**, **Optimism** (OP), **Base**, **Avalanche C-Chain** (AVAX) |
+| **Solana** | `B3c4xrSL4iVAi6t6GadUPJ56iy5586JDansdvur5KpKk` | **Solana** (SOL) and all SPL tokens (USDC, USDT, etc.) |
 
 ## Privacy
 
