@@ -101,20 +101,7 @@ cd twitch-adblock
 
 Load the folder as an unpacked extension. After editing `content.js` or `manifest.json`, hit reload on the extension card in `chrome://extensions`.
 
-The `research/` folder contains the Playwright scripts used to reverse-engineer Twitch playback and to regression-test the blocker. They are optional and need Playwright:
-
-A detailed write-up (in Russian) of how Twitch serves SSAI ads and how each layer was validated: [`docs/RESEARCH.ru.md`](docs/RESEARCH.ru.md).
-
-```bash
-npm install
-npx playwright install chromium
-```
-
-Many scripts hit Twitch through an HTTP proxy (Twitch geo-blocks some regions). Pass it via environment variables — nothing is hardcoded:
-
-```bash
-PROXY_SERVER=http://host:port PROXY_USER=user PROXY_PASS=pass RUN=1 node research/chanswitch-test.js
-```
+### Packaging
 
 Build a store-ready zip:
 

@@ -10,8 +10,10 @@ dist/
 Thumbs.db
 desktop.ini
 
-# Playwright profiles and test artifacts
-research/*profile*/
-research/ab/
-research/ui/
-research/*.png
+# Research & development artifacts (not part of extension)
+research/
+docs/RESEARCH*.md
+package.json
+icons/icon-src*
+icons/make-icons.ps1
+icons/icon512.png

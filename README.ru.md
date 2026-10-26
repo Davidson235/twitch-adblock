@@ -101,20 +101,7 @@ cd twitch-adblock
 
 Загрузить папку как unpacked. После правок `content.js` или `manifest.json` — перезагрузить расширение в `chrome://extensions`.
 
-В папке `research/` лежат Playwright-скрипты, которыми разбиралось поведение плеера Twitch и прогонялись регресс-тесты блокировщика. Они необязательны и требуют Playwright:
-
-Подробный разбор того, как Twitch отдаёт SSAI-рекламу и как проверялся каждый слой, — в [`docs/RESEARCH.ru.md`](docs/RESEARCH.ru.md).
-
-```bash
-npm install
-npx playwright install chromium
-```
-
-Многие скрипты ходят на Twitch через HTTP-прокси (Twitch геоблокирует часть регионов). Прокси передаётся переменными окружения, в коде ничего не зашито:
-
-```bash
-PROXY_SERVER=http://host:port PROXY_USER=user PROXY_PASS=pass RUN=1 node research/chanswitch-test.js
-```
+### Сборка
 
 Собрать zip для стора:
 
