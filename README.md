@@ -125,3 +125,10 @@ Pushing a `v*` tag triggers `.github/workflows/release.yml`, which builds the zi
 ## License
 
 [MIT](LICENSE)
+
+## Disclaimer
+
+- **Not Affiliated with Twitch:** This project is an independent open-source tool and is not affiliated with, endorsed, sponsored, or supported by Twitch Interactive, Inc. or Amazon.com, Inc. "Twitch" and all related marks and logos are registered trademarks of their respective owners.
+- **Educational & Research Purpose:** This software was created solely for educational and research purposes to demonstrate Web Worker interception, HLS playlist manipulation, and client-side stream processing.
+- **Terms of Service:** Using this extension may conflict with third-party Terms of Service. You use this software at your own risk. The author assumes no responsibility or liability for any actions, account bans, or disruptions resulting from its use.
+- **No Warranty:** The software is provided "as is", without warranty of any kind, under the terms of the MIT License.
