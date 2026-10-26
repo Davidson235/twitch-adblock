@@ -106,7 +106,7 @@ cd twitch-adblock
 Подробный разбор того, как Twitch отдаёт SSAI-рекламу и как проверялся каждый слой, — в [`docs/RESEARCH.ru.md`](docs/RESEARCH.ru.md).
 
 ```bash
-npm install playwright
+npm install
 npx playwright install chromium
 ```
 

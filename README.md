@@ -106,7 +106,7 @@ The `research/` folder contains the Playwright scripts used to reverse-engineer 
 A detailed write-up (in Russian) of how Twitch serves SSAI ads and how each layer was validated: [`docs/RESEARCH.ru.md`](docs/RESEARCH.ru.md).
 
 ```bash
-npm install playwright
+npm install
 npx playwright install chromium
 ```
 

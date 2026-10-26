@@ -6,7 +6,7 @@ They are **not** part of the extension and are excluded from release builds.
 ## Setup
 
 ```bash
-npm install playwright
+npm install
 npx playwright install chromium
 ```
 
